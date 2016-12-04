@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'proxima-nova', 'Raleway', 'Helvetica-Neue', Helvetica, sans-serif;
+	background-color: #f4f7ea;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.table {
+	height: 510px;
+	width: 570px;
+	background-color: #8ce2d4;
+}
+
+.cell {
+	height: 170px;
+	width: 190px;
+	text-align: center;
+}
+
+.cell:hover {
+	opacity: 0.75;
+}
+
+
+.table.table-borderless th, .table.table-borderless td {
+	border: none;
+}
+
+#first-row, #second-row {
+	border-bottom: 4px solid black;
+}
+
+.table.table-borderless .cell:nth-child(1), .table.table-borderless .cell:nth-child(2) {
+	border-right: 4px solid black;
+}
+
+.heading {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#winner {
+	margin-bottom: 50px;
+	color: #d60e0e;
+	text-align: center;
+	font-size: 60px;
+
+}
+
+#play-again {
+	width: 200px;
+	text-align: center;
+	color: black;
+	background-color: #db7725;
+	position: relative;
+	right: -50px;
+}
+
+#result {
+	visibility: hidden;
+	position: relative;
+	left: -100px;
+}
+
+#error {
+	visibility: hidden;
+	text-align: center;
+}
+
+/*
+	HELPER CLASS
+*/
+.clicked {
+	font-size: 100px;
+	font-weight: bold;
+	-webkit-animation-name: flyIntoScreen;
+	-webkit-animation-duration: 1.3s;
+	-webkit-animation-timing-function: ease-out;
+}
+
+@keyframes flyIntoScreen {
+	 0% {transform: scale(1.7);}
+	 60% {transform: scale(0.9);}
+	 90% {transform: scale(1.05);}
+     100% {transform: scale(1);}           
+}
+
+
+/****************
+	NAVBAR
+******************/
+.navbar-brand img {
+	width: 68px;
+	height: 49px;
+	position: relative;
+	top: -14px;
+	left: -3px;
+}
+
+.navbar-brand {
+	
+}

@@ -9,15 +9,11 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Welcome</title>
+	<title>Tic Tac Toe</title>
 
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
-	<link rel="stylesheet" href="css/homepage.css">
-
-	
-	<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
 
 	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -38,19 +34,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="img/cat1.jpg" alt="picture of cat"></a>
+					<a class="navbar-brand" href="#"><img src="../../img/cat1.jpg" alt="picture of cat"></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="../../index.html">Home <span class="sr-only">(current)</span></a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Let's play some games! <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="games/Reaction tester/reaction_tester.html">Reaction tester</a></li>
-								<li><a href="games/Tictactoe/tictactoe.html">Tic Tac Toe</a></li>
-								<li><a href="games/Snake/snake.html">Snake game</a></li>
+								<li><a href="../Reaction tester/reaction_tester.html">Reaction tester</a></li>
+								<li><a href="#">Tic Tac Toe</a></li>
+								<li><a href="../Snake/snake.html">Snake Game</a></li>
 								<li role="separator" class="divider"></li>
 								<li><a href="#">Link</a></li>
 								<li role="separator" class="divider"></li>
@@ -62,13 +58,54 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-	
 
 		<div class="container">
-			<h1>Be right back</h1>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+			
+			<h1 class="heading">Welcome to a simple game of tic tac toe!</h1>		
 
-	</body>
+			<div class="row">
+				<div class="col-md-6">
+					<div id="error" class="alert alert-danger">Choose another tile!</div>		
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<table class="table table-borderless">
+						<tr class="row" id="first-row">
+							<td class="cell cell-1"></td>
+							<td class="cell cell-2"></td>
+							<td class="cell cell-3"></td>
+						</tr>
+
+						<tr class="row" id="second-row">
+							<td class="cell cell-4"></td>
+							<td class="cell cell-5"></td>
+							<td class="cell cell-6"></td>
+						</tr>
+
+						<tr class="row" id="third-row">
+							<td class="cell cell-7"></td>
+							<td class="cell cell-8"></td>
+							<td class="cell cell-9"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="col-md-4" id="result">
+					<h3 id="winner"></h3>
+					<button class="btn btn-primary btn-lg" id="play-again">Play again?</button>
+				</div>
+			</div><!-- row -->
+
+		</div><!-- container -->
+
+
+
+    	<!-- BOOTSTRAP CORE JAVASCRIPT 
+    	Placed at the end of the document so that the pages load faster !-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    	<script src="main.js"></script>
+    </body>
 </html>
